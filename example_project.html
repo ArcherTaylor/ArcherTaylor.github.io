@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navigation_bar"></div>
+    <h1>EXAMPLE PROJECT PAGE</h1>
+</body>
+<script>
+    fetch('navigation_bar.html')
+    .then(response => response.text())
+    .then(html => {
+        document.getElementById('navigation_bar').innerHTML = html;
+    });
+    window.addEventListener('load', function () {
+        var navigation_number = 0; // change the number to specify which element to change
+        document.getElementsByClassName("navigation_link_wrapper")[navigation_number].className = "navigation_link_wrapper active-nav-link"
+    })
+</script>
+</html>

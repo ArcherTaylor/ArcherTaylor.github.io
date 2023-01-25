@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navigation_bar"></div>
+    <div class="container">
+        <div class="portfolio">
+            <!-- Start of Portfolio item -->
+            <div class="portfolio_item" style="background-image:url('assets/backgroundComputer.jpg')"> <!-- Change image to what you want -->
+                <a href="example_project.html"><span></span></a> <!-- Change href to your project page -->
+                <h1>Python</h1> <!-- Change Project Title -->
+                <h4>Python programs varying from Data Anaylytics to Data Visualization</h4> <!-- Change Description -->
+            </div>
+            <!-- End of Portfolio item -->
+            <div class="portfolio_item" style="background-image:url('assets/backgroundComputer.jpg')">
+                <a href="example_project.html"><span></span></a>
+                <h1>Machine Learning</h1>
+                <h4>Machine Learning programs for Object Detection and Location</h4>
+            </div>
+            <div class="portfolio_item" style="background-image:url('assets/backgroundComputer.jpg')">
+                <a href="example_project.html"><span></span></a>
+                <h1>Unix</h1>
+                <h4>Unix programs varying from Data Anaylytics to Data Visualization</h4>
+            </div>
+            <div class="portfolio_item" style="background-image:url('assets/backgroundComputer.jpg')">
+                <a href="example_project.html"><span></span></a>
+                <h1>Apps</h1>
+                <h4>App development and design</h4>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const portfolioItemsHolder = document.querySelectorAll('.portfolio_item')
+
+    portfolioItemsHolder.forEach(item => {
+        item.addEventListener('mouseover', () => {
+            item.classList.add('img-darken')
+        })
+
+        item.addEventListener('mouseout', () => {
+            item.classList.remove('img-darken')
+        })
+
+        item.addEventListener('click', () => {
+            item.classList.remove('img-darken')
+        })
+    })
+</script>
+<script>
+    fetch('navigation_bar.html')
+    .then(response => response.text())
+    .then(html => {
+        document.getElementById('navigation_bar').innerHTML = html;
+    });
+    window.addEventListener('load', function () {
+        var navigation_number = 0; // change the number to specify which element to change
+        document.getElementsByClassName("navigation_link_wrapper")[navigation_number].className = "navigation_link_wrapper active-nav-link"
+    })
+</script>
+</html>
+
+<!-- Blank Link -->
+<!-- <a href="javascript:void(0);"></a> -->

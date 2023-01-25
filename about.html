@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Portfolio</title> <!-- Change to whatever title you wish -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .skill_python{width: 100%; background-color: #f44336;} /* Change .skill_python to skill_... width to percentage and color to what you wish */
+        .skill_html {width: 90%; background-color: #04AA6D;}
+        .skill_css {width: 75%; background-color: #2196F3;}
+        .skill_javascript {width: 65%; background-color: orange;}
+
+
+    </style>
+</head>
+<body>
+    <div id="navigation_bar"></div>
+    <div class="container" style="height: 96%;">
+        <div class="about_me">
+            <div class="personal_photo" style="background-image: url('assets/panda.jpg');"></div> <!-- Change Image to image of you -->
+            <div class="bio">
+                <h1>Avery Fernandez</h1> <!-- Change Name -->
+                <h2>Hands-on, successful Software Engineer with years of technology solutions for desktop, hardware, and mobile products.</h2> <!-- Change Summary -->
+                <h3>Skills</h3>
+                <div class="skills"> 
+                    <!-- Start of Skill -->
+                    <h4>Python</h4> <!-- Change to Skill Wanted -->
+                    <div class="individual_skill">
+                        <div class="skillBar  skill_python">100%</div> <!-- Change skill_python to skill_... and change percentage -->
+                    </div>
+                    <!-- End of Skill -->
+                    <h4>HTML</h4>
+                    <div class="individual_skill">
+                        <div class="skillBar  skill_html">90%</div>
+                    </div>
+                    <h4>CSS</h4>
+                    <div class="individual_skill">
+                        <div class="skillBar  skill_css">75%</div>
+                    </div>
+                    <h4>JavaScript</h4>
+                    <div class="individual_skill">
+                        <div class="skillBar  skill_javascript">65%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    fetch('navigation_bar.html')
+    .then(response => response.text())
+    .then(html => {
+        document.getElementById('navigation_bar').innerHTML = html;
+    });
+    window.addEventListener('load', function () {
+        var navigation_number = 1; // change the number to specify which element to change
+        document.getElementsByClassName("navigation_link_wrapper")[navigation_number].className = "navigation_link_wrapper active-nav-link"
+    })
+</script>
+</html>
