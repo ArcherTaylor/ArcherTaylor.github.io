@@ -23,8 +23,10 @@ body,html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 200px;
     height: 100%;
+    left: 25%;
+    animation: nameSlideIn;
+    animation-duration: 3s;
 }
 
 .landing_page_text h1 {
@@ -34,17 +36,28 @@ body,html {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
 }
+
+@keyframes nameSlideIn{
+    from{
+        top: -1000px;
+    }
+    to{
+        top: 0px;
+    }
+}
+
 .landing_page_text h4 {
     text-align: left;
     margin: 10px;
 }
+
 .home_button {
     background-color: #555555;
     border: groove;
     border-width: 1px;
     color: white;
     padding: 15px 32px;
-    margin-left: 250px;
+    margin-left: auto;
     text-decoration: none;
     width: max-content;
     transition-duration: .4s;
