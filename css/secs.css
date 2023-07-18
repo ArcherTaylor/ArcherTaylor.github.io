@@ -1,0 +1,403 @@
+body[data-vsapp-context='home'] {
+	background-color: #000;
+	color: #fff;
+}
+
+.sec_skills {
+	background: transparent;
+	height: auto;
+}
+
+#content .sec_skills ul.sec_tags {
+	list-style: none;
+	padding: 0;
+}
+
+.sec_skills_title a
+{
+	color:#DC143C;
+}
+
+.sec_skills_title a:hover
+{
+	transition: all 250ms linear;
+	color: #fff;
+}
+
+.sec_skills ul.sec_tags li.sec_tag {
+	font-size: 12vw;
+	font-weight: 900;
+	line-height: 1;
+	transition: opacity 500ms linear, max-height 500ms linear, padding 250ms linear;
+	max-height: 3000px;
+	height: auto;
+	opacity: 1;
+	margin-top: 20px;
+}
+
+@media (min-width: 668px) {
+	.sec_skills ul.sec_tags li.sec_tag {
+		font-size: 8vw;
+	}
+}
+
+@media (min-width: 820px) {
+	.sec_skills ul.sec_tags li.sec_tag {
+		font-size: 6vw;
+		line-height: 1.2;
+	}
+}
+
+@media (min-width: 1200px) {
+	.sec_skills ul.sec_tags li.sec_tag {
+		font-size: 70px;
+	}
+}
+
+.sec_skills ul.sec_tags li.sec_tag a {
+	transition: all 250ms linear;
+	display: block;
+	border: none;
+	color:  #DC143C;
+}
+
+.sec_skills ul.sec_tags li.sec_tag a:hover {
+	color: #fff;
+}
+
+.sec_skills ul.sec_tags li.sec_tag.selected > a {
+	color: #fff;
+}
+
+.sec_skills ul.sec_tags li.sec_tag .sec_opening a {
+	color: #000;
+}
+
+.sec_skills ul.sec_tags li.sec_tag .sec_opening a:hover {
+	color:  #DC143C;
+}
+
+.sec_skills ul.sec_tags li.sec_tag.selected {
+	padding-bottom: 600px;
+}
+
+.sec_skills ul.sec_tags li.empty_answer {
+	opacity: 1 !important;
+	max-height: 3000px !important;
+}
+
+.sec_skills .sec_openings_wrapper,
+.sec_skills .search_form_results_wrapper {
+	height: 0;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: auto;
+	width: calc(100% - 10vw);
+	background: #ededed;
+	transition: height 250ms linear;
+	margin: 50px 0;
+	padding: 0 5vw;
+}
+
+@media (min-width: 820px) {
+	.sec_skills .sec_openings_wrapper,
+	.sec_skills .search_form_results_wrapper {
+		width: 100vw;
+		padding: 0;
+	}
+}
+
+.sec_skills .sec_openings_inner_wrapper,
+.sec_skills .search_form_results_inner_wrapper {
+	margin: 40px auto;
+}
+
+@media (min-width: 820px) {
+	.sec_skills .sec_openings_inner_wrapper,
+	.sec_skills .search_form_results_inner_wrapper {
+		margin: 100px auto;
+		max-width: calc(100% - 200px);
+	}
+}
+
+@media (min-width: 1360px) {
+	.sec_skills .sec_openings_inner_wrapper,
+	.sec_skills .search_form_results_inner_wrapper {
+		max-width: 1200px;
+	}
+}
+
+.sec_skills .sec_openings {
+	font-size: 1vw;
+	font-weight: normal;
+	list-style: none;
+}
+
+.sec_skills .sec_openings_category_description {
+	font-size: 1.5vw;
+	font-weight: 900;
+	color: #585758;
+}
+
+@media (min-width: 668px) {
+	.sec_skills .sec_openings_category_description {
+		font-size: 22px;
+	}
+}
+
+.sec_skills li.sec_tag.selected .sec_openings_wrapper {
+	height: 600px;
+}
+
+.sec_skills .sec_openings .row {
+	margin: 0;
+}
+
+.sec_skills .sec_openings .sec_opening {
+	margin-bottom: 20px;
+	padding: 0;
+}
+
+.sec_skills .sec_openings .row:last-of-type .sec_opening:last-of-type {
+	margin-bottom: 0;
+}
+
+.sec_skills .sec_openings a {
+	color: #000;
+	display: inline;
+}
+
+.sec_skills .sec_openings .sec_title,
+.sec_skills .sec_openings .no_results,
+.sec_skills .sec_openings .sec_division {
+	font-weight: 900;
+	font-size: 6vw;
+	line-height: 1.2;
+	color: #000;
+}
+
+@media (min-width: 668px) {
+	.sec_skills .sec_openings .sec_title,
+	.sec_skills .sec_openings .no_results,
+	.sec_skills .sec_openings .sec_division {
+		font-size: 3.5vw;
+	}
+}
+
+@media (min-width: 820px) {
+	.sec_skills .sec_openings .sec_title,
+	.sec_skills .sec_openings .no_results,
+	.sec_skills .sec_openings .sec_division{
+		font-size: 1.75vw;
+	}
+}
+
+@media (min-width: 1200px) {
+	.sec_skills .sec_openings .sec_title,
+	.sec_skills .sec_openings .no_results,
+	.sec_skills .sec_openings .sec_division {
+		font-size: 20px;
+	}
+}
+
+.sec_skills .sec_openings .sec_division {
+	font-weight: 200;
+	display: block;
+}
+
+.search_header {
+	position: relative;
+}
+
+@media (min-width: 820px) {
+	.search_header p:last-of-type {
+		margin-bottom: 0;
+	}
+
+	.search_header .search_form {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+}
+
+
+.sec_skills .search_form input {
+	color:  #DC143C;
+	border-bottom: 2px #fff solid;
+}
+
+.sec_skills .search_form input::placeholder {
+	color: #fff;
+}
+
+.sec_skills .search_form .search_button,
+.sec_skills .search_form .clear_button {
+	background-image: url('https://cdn.akamai.steamstatic.com/valvesoftware/images/search.png');
+}
+
+.sec_skills .search_form .clear_button {
+	background-image: url('https://cdn.akamai.steamstatic.com/valvesoftware/images/search_clear.png');
+}
+
+/* sec opening violator */
+.sec_opening_violator {
+	background-color:  #DC143C;
+}
+
+.sec_opening_violator h3 {
+	font-size: 38px;
+	font-weight: 900;
+	line-height: 1.1;
+}
+
+.violator_details {
+	font-weight: 900;
+	line-height: 1.1;
+	display: block;
+	font-size: 21px;
+	margin-top: 22px;
+}
+
+.violator_details a, .violator_details a:hover, .violator_details a:visited, .violator_details a:active {
+	color: #fff;
+}
+
+/* sec opening page */
+
+body[data-vsapp-context='job-opening'] {
+	background-repeat: no-repeat;
+	background-position: -30vw -18vw;
+	background-size: 150vw auto;
+  }
+
+
+@media (min-width: 668px) {
+	body[data-vsapp-context='job-opening'] {
+		background-position: top center;
+		background-size: 70vw auto;
+		background-repeat: no-repeat;
+	}
+}
+
+@media (min-width: 1600px) {
+	body[data-vsapp-context='job-opening'] {
+		background-size: 800px auto;
+	}
+}
+
+.sec_opening_article h4 a {
+	border: 0;
+	color:  #DC143C;
+}
+
+#content > .sec_opening_title {
+	margin-bottom: 0;
+}
+
+#content > .sec_description {
+	margin-top: 0;
+}
+
+@media (min-width: 820px) {
+	.sec_opening_title h1 {
+		font-size:40px;
+		margin-bottom: 0px;
+	}
+
+}
+
+h4 {
+	padding-top: 8px;
+}
+
+.sec_opening_location {
+	color: gray;
+	margin-top: 4px;
+}
+
+.sec_opening_attributes {
+	background-color: #ebebeb;
+}
+
+.sec_opening_attribute h5 {
+	font-size: 18px;
+	margin: 0 0 20px;
+}
+
+.sec_opening_attribute ul {
+	list-style: none;
+}
+
+.sec_description .list_title {
+	font-weight: 800;
+}
+
+.sec_application,
+.contact_form {
+	background: #d9d8da;
+}
+
+.sec_application form label, .sec_application form p {
+	display: block;
+	font-weight: 400;
+}
+
+.sec_benefits {
+	background-color: #e6e6e6;
+	padding: 20px;
+}
+
+.sec_benefits .list_title {
+	color: #5C5C5C;
+}
+
+#content .sec_benefits ul {
+	font-size: 16px;
+	color: gray;
+	padding-left: 0px;
+}
+
+.sec_benefits li {
+	display: block;
+	line-height: 20px;
+	margin-bottom: 14px;
+}
+
+#content ol {
+	list-style-position: inside
+}
+
+.inclusion .row {
+	font-size: 16px;
+	color: gray;
+	padding-left: 0px;
+}
+
+.social_icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social_icons a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social_icons svg {
+    width: 100px;
+    height: 100px;
+}
+
+.social_icons svg:hover {
+	transition: all 250ms linear;
+    color: #000;
+}
+
+.social_icons svg:not(:hover) {
+	transition: all 250ms linear;
+    color: #DC143C;
+}
