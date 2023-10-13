@@ -148,7 +148,6 @@ var PortfolioPage = function ()
 		}
 	}
 
-
 	function _VideoRotator( iLastVideoIdx )
 	{
 		var $elVideos = $J( '#page_background_videos .background_video' );
